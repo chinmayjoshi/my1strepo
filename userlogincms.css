@@ -1,0 +1,70 @@
+/*BUTTON CSS BELOW*/
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color:#77d42a;
+	-moz-border-radius:36px;
+	-webkit-border-radius:36px;
+	border-radius:36px;
+	border:6px solid #268a16;
+	display:inline-block;
+	color:#306108;
+	font-family:Times New Roman;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 14px #aade7c;
+}.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color:#5cb811;
+}.button:active {
+	position:relative;
+	top:1px;
+}
+/*BUTTON CSS ABOVE*/
+fieldset {
+ background-color:#ffcc66;
+  overflow: hidden;
+}
+
+label {
+  clear: both;
+  float: left;
+  margin-top: 10px;
+  width: 125px;
+  /* If you want the labels flush along the right edge */
+  padding-right: 5px;
+  text-align: right;
+}
+h1{
+margin:0 auto;
+}
+input,textarea,select { /*removed span tag*/
+  float: left;
+  margin-top: 10px;
+}
+
+/* Align the submit button under the fields */
+input[type=submit] {
+  clear: both;
+  float: left;
+  margin-left: 135px;
+  margin-top: 10px;
+}
+.myform{
+
+position:absolute;
+width:33%;
+left:33%;
+
+}
+span{
+color:red;
+}
