@@ -3,6 +3,9 @@
 </head>
 <body>
 <?php
+session_start();
+echo $_SESSION['user'];//THIS IS FOR TESTING
+echo '<br>';
 $con = mysqli_connect("localhost","root","");
 mysqli_select_db($con,'auction');
 $sql = "SELECT * FROM objects";
@@ -18,7 +21,14 @@ for($i=0; $i<count($names);$i++)
 echo "Name of object: $names[$i] <br>
 	  Expires on : $time;<br>
 	  <img src='images/$images[$i].jpg' height=150 width=150><br>
+	  <a>Place your bid:</a></br>
+	  The bid:(in Indian rupees)
+	  <form action='getbid.php' method='post'>
+	  <input name='bid' type='number'>
+	  </form>
+	  
 ";
+
 }
 ?>
 </body>
